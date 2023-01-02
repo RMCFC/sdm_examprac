@@ -1,0 +1,45 @@
+sudo yum update
+
+ sudo yum install git-y
+
+git clone https://github.com/RaviTambade/containerapps.git
+
+sudo yum install docker -y
+
+ls
+
+
+cd containerapps
+
+ls
+
+ cd nodeapp
+
+ls
+
+
+ sudo systemctl enable docker
+
+sudo systemctl start docker
+
+ sudo systemctl status docker ls
+
+sudo docker build -t nodeapp .
+
+
+sudo docker images
+
+sudo docker run -d -p 8081:8081 nodeapp
+
+
+sudo docker ps 20 history
+
+sudo docker images
+
+ sudo docker ps
+
+sudo docker kill fec579
+
+ sudo docker ps
+
+history
